@@ -1,7 +1,7 @@
 <!-- ? Directive Angular - ში არსებობს 3 ტიპის -->
-<!--  * Component  დირექტივა -->
-<!--  * Attribute  დირექტივა -->
-<!--  * Structural დირექტივა-->
+<!--  * Component  დირექტივა (ასახავს როგორ გამოიყურება view  რომელსაც მომხმარებელი ხედავს) -->
+<!--  * Attribute  დირექტივა (ცვლის გარეგნობას, ან ქცევას სხვადასხვა ელემენტებზე) -->
+<!--  * Structural დირექტივა (ცვლის DOM-ს ელემენტების დამატებით ან წაშლით) -->
 
 <div class="divider">
   <h2>კომპონენტური დირექტივა</h2>
@@ -24,12 +24,14 @@
 <!-- ? კომპლექსური ატრიბუტული დირექტივა -->
 <div class="container">
   <div class="inner">
-    <p appHasPermission="read">თქვენ შეგიძლია ამის ნახვა რადგან თქვენ გაქვთ Read Permission</p>
+    <p UserHasPermission="read">თქვენ შეგიძლია ამის ნახვა რადგან თქვენ გაქვთ Read Permission</p>
 
-    <textarea appHasPermission="write">თქვენ შეგიძლია ამის ნახვა რადგან თქვენ გაქვთ Write Permission</textarea>
+    <textarea UserHasPermission="write">თქვენ შეგიძლია ამის ნახვა რადგან თქვენ გაქვთ Write Permission</textarea>
 
-    <button appHasPermission="delete" style="background-color: red; color: #fff;">თქვენ შეგიძლია ამის ნახვა რადგან თქვენ
-      გაქვთ Delete Permission</button>
+    <button UserHasPermission="delete" style="background-color: red; color: #fff;">თქვენ შეგიძლია ამის ნახვა რადგან
+      თქვენ
+      გაქვთ Delete Permission
+    </button>
   </div>
 </div>
 

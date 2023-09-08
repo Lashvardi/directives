@@ -6,8 +6,10 @@ import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 export class HighlightDirective {
   @Input('appHighlight') highlightColor!: string;
 
-  private el: HTMLElement;
 
+
+  private el: HTMLElement;
+  
   constructor(el: ElementRef) {
     this.el = el.nativeElement;
     console.log(this.el);
